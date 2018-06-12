@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Enable passwordless sudo for default user
-echo '$(whoami) ALL=(ALL) NOPASSWD:ALL' | sudo tee /etc/sudoers.d/$(whoami)
+echo "$(whoami) ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/$(whoami)
 
 # Update package lists
 echo 'Updating package lists...'
