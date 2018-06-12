@@ -2,7 +2,7 @@
 Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 # Install Chocolatey packages
-choco install `
+choco install -y `
   7zip `
   adobereader `
   atom `
@@ -34,4 +34,4 @@ choco install `
   wireshark
 
 # Install Notepad++ x86
-choco install notepadplusplus --x86
+choco install -y notepadplusplus --x86
