@@ -23,7 +23,7 @@ choco install -y `
   pstools `
   putty.install `
   rsat `
-  rufus.install `
+  rufus `
   sysinternals `
   vagrant `
   vlc `
