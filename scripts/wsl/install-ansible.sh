@@ -16,4 +16,3 @@ sudo pip install \
   netaddr \
   pyvmomi \
   pywinrm
-  
