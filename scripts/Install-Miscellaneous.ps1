@@ -1,6 +1,7 @@
 # ConEmu font
 $fontFileName = 'Ubuntu Mono Nerd Font Complete Mono Windows Compatible.ttf'
 $fontUri = 'https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/UbuntuMono/Regular/complete/Ubuntu%20Mono%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf'
+$systemFontsPath = 'C:\Windows\Fonts'
 
 # Visual Studio Code extensions
 $vscodeExtensions = @(
