@@ -11,6 +11,9 @@ Invoke-Expression ($webClient.DownloadString('https://raw.githubusercontent.com/
 # Install miscellaneous
 Invoke-Expression ($webClient.DownloadString('https://raw.githubusercontent.com/richardlock/workstation-setup/master/scripts/Install-Miscellaneous.ps1'))
 
+# Install dotfiles
+Invoke-Expression ($webClient.DownloadString('https://raw.githubusercontent.com/richardlock/workstation-setup/master/scripts/Install-Dotfiles.ps1'))
+
 # Install Windows Subsystem for Linux
 Invoke-Expression ($webClient.DownloadString('https://raw.githubusercontent.com/richardlock/workstation-setup/master/scripts/Install-WslUbuntu.ps1'))
 
