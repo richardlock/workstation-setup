@@ -7,5 +7,5 @@ $dockerDaemonConfigUri = 'https://raw.githubusercontent.com/richardlock/dotfiles
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
 # Install Docker daemon config
-New-Item -path “C:\winpe_x86\mount” -type directory
+New-Item -Path $dockerDaemonConfigDir -Type Directory
 Invoke-WebRequest -Uri $dockerDaemonConfigUri -OutFile (Join-Path $dockerDaemonConfigDir $dockerDaemonConfigFile)
