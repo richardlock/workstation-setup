@@ -17,3 +17,7 @@ sudo pip install \
   netaddr \ # big-ip
   pyvmomi \ # vmware
   pywinrm # windows
+
+# Copy ansible.cfg to /etc/ansible/ansible.cfg
+sudo mkdir /etc/ansible
+sudo cp ~/.dotfiles/etc/ansible/ansible.cfg /etc/ansible/ansible.cfg
