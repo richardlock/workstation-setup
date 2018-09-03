@@ -25,8 +25,9 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/p
 # Install dotfiles
 git clone -b wsl https://github.com/richardlock/dotfiles.git ~/.dotfiles && ~/.dotfiles/install
 
-# Create ~/.ssh directory
-mkdir -m 700 ~/.ssh
+# Link ~/.ssh directory
+ln -s "/c/Users/${$(whoami)/zz-/}/.ssh" ~/.ssh
+sudo chmod 600 ~/.ssh/*
 
 # Copy wsl.conf to /etc
 sudo cp ~/.dotfiles/etc/wsl.conf /etc/wsl.conf
