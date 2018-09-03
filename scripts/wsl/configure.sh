@@ -31,7 +31,7 @@ cp -r "/mnt/c/Users/${$(whoami)/zz-/}/.ssh/." ~/.ssh
 sudo chmod 600 ~/.ssh/*
 
 # Copy wsl.conf to /etc
-sudo cp ~/.dotfiles/etc/wsl.conf /etc/wsl.conf
+sudo cp ~/.dotfiles/wsl/wsl.conf /etc/wsl.conf
 
 # Upgrade packages
 echo 'Upgrading packages...'
