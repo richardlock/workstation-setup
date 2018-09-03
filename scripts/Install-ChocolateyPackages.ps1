@@ -14,9 +14,7 @@ choco install -y `
   git `
   googlechrome `
   hashcheck `
-  hipchat `
   jre8 `
-  mobaxterm `
   mremoteng `
   paint.net `
   packer `
