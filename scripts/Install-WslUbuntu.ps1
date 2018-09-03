@@ -11,4 +11,4 @@ If (!(Test-Path -Path '~\Ubuntu')) {
 }
   
 # Initialise Ubuntu
-Start-Process -FilePath '~\Ubuntu\ubuntu.exe' -Wait  
+Start-Process -FilePath '~\Ubuntu\ubuntu1804.exe' -Wait  
