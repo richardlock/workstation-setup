@@ -1,11 +1,20 @@
-# Docker daemon config
-$dockerDaemonConfigDir = 'C:\ProgramData\docker\config'
-$dockerDaemonConfigFile = 'daemon.json'
-$dockerDaemonConfigUri = 'https://raw.githubusercontent.com/richardlock/dotfiles/windows/docker/daemon.json'
+# Dotfiles
+$dotfilesDir = "$env:USERPROFILE\.dotfiles"
+$dotfilesRepoBranch = 'windows"
+$dotfilesRepoUri = 'https://github.com/richardlock/dotfiles.git'
 
-# Enable TLS 1.2 for downloads
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+#ConEmu
+$conEmuConfigDir = "$env:APPDATA"
 
-# Install Docker daemon config
-New-Item -Path $dockerDaemonConfigDir -Type Directory
-Invoke-WebRequest -Uri $dockerDaemonConfigUri -OutFile (Join-Path $dockerDaemonConfigDir $dockerDaemonConfigFile)
+# Docker
+$dockerDaemonConfigDir = "$env:ALLUSERSPROFILE\docker\config"
+
+# Clone dotfiles Windows branch
+git clone -b $dotfilesRepoBranch --single-branch $dotfilesRepoUri $dotfilesDir
+
+# ConEmu symbolic link
+New-Item -ItemType SymbolicLink -Path "$conEmuConfigDir\ConEmu.xml" -Value "$dotfilesDir\conemu\ConEmu.xml"
+
+# Docker symbolic link
+New-Item -ItemType Directory -Path $dockerDaemonConfigDir
+New-Item -ItemType SymbolicLink -Path "$dockerDaemonConfigDir\daemon.json" -Value "$dotfilesDir\docker\daemon.json"
