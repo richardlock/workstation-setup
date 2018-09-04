@@ -1,7 +1,7 @@
 # Dotfiles
 $dotfilesDir = "$env:USERPROFILE\.dotfiles"
 $dotfilesRepoBranch = 'windows'
-$dotfilesRepoUri = "https://github.com/richardlock/dotfiles.git"
+$dotfilesRepoUri = 'https://github.com/richardlock/dotfiles.git'
 
 #ConEmu
 $conEmuConfigDir = "$env:APPDATA"
