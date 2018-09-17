@@ -8,7 +8,6 @@ choco install -y `
   atom `
   conemu `
   docker-for-windows `
-  f.lux `
   filezilla `
   firefox `
   git `
