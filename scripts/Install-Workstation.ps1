@@ -18,7 +18,7 @@ Invoke-Expression ($webClient.DownloadString('https://raw.githubusercontent.com/
 Invoke-Expression ($webClient.DownloadString('https://raw.githubusercontent.com/richardlock/workstation-setup/master/scripts/Install-WslUbuntu.ps1'))
 
 # Configure Windows Subsystem for Linux
-Start-Process -FilePath wsl -ArgumentList 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/richardlock/workstation-setup/master/scripts/wsl/configure.sh)"' -Wait
+Start-Process -FilePath wsl -ArgumentList 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/richardlock/workstation-setup/master/scripts/wsl/configure-wsl.sh)"' -Wait
 
 # Install Ansible in Windows Subsystem for Linux
 Start-Process -FilePath wsl -ArgumentList 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/richardlock/workstation-setup/master/scripts/wsl/install-ansible.sh)"' -Wait
