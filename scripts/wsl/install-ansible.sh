@@ -5,8 +5,8 @@ sudo -H apt -y install python-pip libssl-dev
 sudo -H pip install --upgrade pip
 
 # Install Ansible
-sudo pip install ansible
-# sudo pip install git+https://github.com/ansible/ansible.git@devel
+# sudo pip install ansible
+sudo pip install git+https://github.com/ansible/ansible.git@devel
 
 # Install Ansible related packages
 sudo pip install \
