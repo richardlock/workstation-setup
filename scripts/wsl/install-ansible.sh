@@ -9,14 +9,7 @@ sudo -H pip install --upgrade pip
 sudo pip install git+https://github.com/ansible/ansible.git@devel
 
 # Install Ansible related packages
-sudo pip install \
-  azure \ # azure
-  docker-py \ # docker
-  f5-sdk \ # big-ip
-  molecule \ # molecule
-  netaddr \ # big-ip
-  pyvmomi \ # vmware
-  pywinrm # windows
+sudo pip install azure docker-py f5-sdk molecule netaddr pyvmomi pywinrm
 
 # Copy ansible.cfg to /etc/ansible/ansible.cfg
 sudo mkdir /etc/ansible
