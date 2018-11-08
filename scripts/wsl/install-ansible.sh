@@ -1,5 +1,12 @@
 # Install packages
-sudo -H apt -y install python-pip libssl-dev ruby ruby-dev
+sudo -H apt -y install \
+  krb5-user \
+  libkrb5-dev \
+  libssl-dev \
+  python-dev \
+  python-pip \
+  ruby \
+  ruby-dev
 
 # Upgrade python pip
 sudo -H pip install --upgrade pip
@@ -17,7 +24,8 @@ sudo -H pip install \
   molecule \
   netaddr \
   pyvmomi \
-  pywinrm
+  pywinrm \
+  'pywinrm[kerberos]'
 
 sudo gem install rubocop
 
