@@ -27,8 +27,6 @@ sudo -H pip install \
   pywinrm \
   'pywinrm[kerberos]'
 
-sudo gem install rubocop
-
 # Copy ansible.cfg to /etc/ansible/ansible.cfg
 sudo mkdir /etc/ansible
 sudo cp ~/.dotfiles/ansible/ansible.cfg /etc/ansible/ansible.cfg
