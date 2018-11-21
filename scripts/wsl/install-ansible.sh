@@ -4,9 +4,7 @@ sudo -H apt -y install \
   libkrb5-dev \
   libssl-dev \
   python-dev \
-  python-pip \
-  ruby \
-  ruby-dev
+  python-pip
 
 # Upgrade python pip
 sudo -H pip install --upgrade pip
