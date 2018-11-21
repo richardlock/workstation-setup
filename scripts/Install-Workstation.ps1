@@ -25,3 +25,6 @@ Start-Process -FilePath wsl -ArgumentList 'sh -c "$(curl -fsSL https://raw.githu
 
 # Install Docker in Windows Subsystem for Linux
 Start-Process -FilePath wsl -ArgumentList 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/richardlock/workstation-setup/master/scripts/wsl/install-docker.sh)"' -Wait
+
+# Install ChefDK in Windows Subsystem for Linux
+Start-Process -FilePath wsl -ArgumentList 'sh -c "$(curl -fsSL https://raw.githubusercontent.com/richardlock/workstation-setup/master/scripts/wsl/install-chefdk.sh)"' -Wait
