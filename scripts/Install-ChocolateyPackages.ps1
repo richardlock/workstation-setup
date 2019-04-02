@@ -7,7 +7,7 @@ choco install -y `
   adobereader `
   atom `
   conemu `
-  docker-for-windows `
+  docker-desktop `
   filezilla `
   firefox `
   git `
