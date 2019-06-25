@@ -1,5 +1,6 @@
 # Windows optional features
 $windowsOptionalFeatures = @(
+  'HypervisorPlatform',
   'Microsoft-Hyper-V',
   'Microsoft-Windows-Subsystem-Linux',
   'TelnetClient'
