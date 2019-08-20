@@ -11,6 +11,9 @@ sudo apt update -y
 echo 'Installing zsh...'
 sudo apt install zsh -f -y
 
+# Set zsh as default shell
+chsh -s $(which zsh)
+
 # Set umask to prevent cloned repositories from having insecure permissions
 umask g-w,o-w
 
