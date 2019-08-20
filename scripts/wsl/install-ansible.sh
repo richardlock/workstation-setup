@@ -10,8 +10,8 @@ sudo -H apt -y install \
 sudo -H pip install --upgrade pip
 
 # Install Ansible
-# sudo pip install ansible
-sudo -H pip install git+https://github.com/ansible/ansible.git@devel
+sudo pip install ansible
+# sudo -H pip install git+https://github.com/ansible/ansible.git@devel
 
 # Install Ansible related packages
 sudo -H pip install \
