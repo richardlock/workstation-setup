@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Install packages
 sudo -H apt -y install \
   krb5-user \

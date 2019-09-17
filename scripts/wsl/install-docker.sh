@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Environment variables you need to set so you don't have to edit the script below.
 export DOCKER_CHANNEL=edge
 export DOCKER_COMPOSE_VERSION=1.21.2
