@@ -3,6 +3,7 @@ $vscodeExtensions = @(
   'ms-azuretools.vscode-docker',
   'ms-vscode.powershell',
   'ms-vscode-remote.remote-wsl',
+  'ms-python.python',
   'vscoss.vscode-ansible'
 )
 
