@@ -26,7 +26,3 @@ sudo -H pip install \
   pyvmomi \
   pywinrm \
   'pywinrm[kerberos]'
-
-# Copy ansible.cfg to /etc/ansible/ansible.cfg
-sudo mkdir /etc/ansible
-sudo cp ~/.dotfiles/ansible/ansible.cfg /etc/ansible/ansible.cfg
