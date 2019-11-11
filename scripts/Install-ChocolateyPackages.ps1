@@ -5,7 +5,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object
 choco install -y `
   7zip `
   adobereader `
-  atom `
   conemu `
   docker-desktop `
   filezilla `
@@ -19,7 +18,6 @@ choco install -y `
   packer `
   pstools `
   putty.install `
-  rsat `
   rufus `
   sysinternals `
   vagrant `
