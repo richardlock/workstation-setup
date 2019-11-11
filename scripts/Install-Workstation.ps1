@@ -2,6 +2,9 @@
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $webClient = New-Object System.Net.WebClient
 
+# Enable Windows capabilities
+Invoke-Expression ($webClient.DownloadString('https://raw.githubusercontent.com/richardlock/workstation-setup/master/scripts/Enable-WindowsCapabilities.ps1'))
+
 # Enable Windows optional features
 Invoke-Expression ($webClient.DownloadString('https://raw.githubusercontent.com/richardlock/workstation-setup/master/scripts/Enable-WindowsOptionalFeatures.ps1'))
 
