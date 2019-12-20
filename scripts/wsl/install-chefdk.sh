@@ -1,7 +1,7 @@
 #!/bin/bash
 
-version = 4.6.35
-package = chefdk_$version-1_amd64.deb
+version=4.6.35
+package=chefdk_$version-1_amd64.deb
 
 # Install ChefDK
 curl -O https://packages.chef.io/files/stable/chefdk/$version/ubuntu/18.04/$package
