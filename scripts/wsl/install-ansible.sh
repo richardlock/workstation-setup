@@ -1,22 +1,28 @@
 #!/bin/bash
 
 # Install packages
-sudo -H apt -y install \
+sudo DEBIAN_FRONTEND=noninteractive -H apt-get -y install \
   krb5-user \
   libkrb5-dev \
   libssl-dev \
-  python-dev \
-  python-pip
+  python3-dev \
+  python3-pip
 
-# Upgrade python pip
-sudo -H pip install --upgrade pip
+# Install virtualenv
+sudo -H pip3 install virtualenv
+
+# Create virtualenv
+virtualenv -p python3 ~/virtualenv/ansible-virtualenv
+
+# Activate virtualenv
+source ~/virtualenv/ansible-virtualenv/bin/activate
 
 # Install Ansible
-sudo pip install ansible
+sudo -H pip3 install ansible
 # sudo -H pip install git+https://github.com/ansible/ansible.git@devel
 
 # Install Ansible related packages
-sudo -H pip install \
+sudo -H pip3 install \
   'ansible[azure]' \
   docker-py \
   f5-sdk \

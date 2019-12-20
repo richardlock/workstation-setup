@@ -2,13 +2,13 @@
 
 # Environment variables you need to set so you don't have to edit the script below.
 export DOCKER_CHANNEL=edge
-export DOCKER_COMPOSE_VERSION=1.21.2
+export DOCKER_COMPOSE_VERSION=1.25.0
 
 # Update the apt package index.
-sudo apt update
+sudo apt-get update
 
 # Install packages to allow apt to use a repository over HTTPS.
-sudo apt install -y \
+sudo apt-get install -y \
   apt-transport-https \
   ca-certificates \
   curl \
@@ -27,10 +27,10 @@ sudo add-apt-repository \
    ${DOCKER_CHANNEL}"
 
 # Update the apt package index.
-sudo apt update
+sudo apt-get update
 
 # Install the latest version of Docker CE.
-sudo apt install -y docker-ce
+sudo apt-get install -y docker-ce docker-ce-cli
 
 # Allow your user to access the Docker CLI without needing root.
 sudo usermod -aG docker $USER

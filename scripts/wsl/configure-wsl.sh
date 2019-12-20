@@ -5,11 +5,11 @@ echo "$(whoami) ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/$(whoami)
 
 # Update package lists
 echo 'Updating package lists...'
-sudo apt update -y
+sudo apt-get update -y
 
 # Install zsh
 echo 'Installing zsh...'
-sudo apt install zsh -f -y
+sudo apt-get install zsh -f -y
 
 # Set zsh as default shell
 chsh -s $(which zsh)
@@ -37,4 +37,4 @@ sudo cp ~/.dotfiles/wsl/wsl.conf /etc/wsl.conf
 
 # Upgrade packages
 echo 'Upgrading packages...'
-sudo apt upgrade -y
+sudo apt-get upgrade -y

@@ -1,9 +1,12 @@
 #!/bin/bash
 
+version = 4.6.35
+package = chefdk_$version-1_amd64.deb
+
 # Install ChefDK
-curl -O https://packages.chef.io/files/stable/chefdk/4.5.0/ubuntu/18.04/chefdk_4.5.0-1_amd64.deb
-sudo dpkg -i chefdk_4.5.0-1_amd64.deb
-rm -f chefdk_4.5.0-1_amd64.deb
+curl -O https://packages.chef.io/files/stable/chefdk/$version/ubuntu/18.04/$package
+sudo dpkg -i $package
+rm -f $package
 
 # Install kitchen-docker
 chef gem install kitchen-docker

@@ -5,14 +5,12 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; Invoke-Expression ((New-Object
 choco install -y `
   7zip `
   adobereader `
-  conemu `
   docker-desktop `
   filezilla `
   firefox `
   git `
   googlechrome `
   hashcheck `
-  jre8 `
   mremoteng `
   paint.net `
   packer `
@@ -20,13 +18,13 @@ choco install -y `
   putty.install `
   rufus `
   sysinternals `
-  vagrant `
   vlc `
   vscode `
   windirstat `
   winmerge `
   winscp `
-  wireshark
+  wireshark `
+  wsltty
 
 # Install Notepad++ x86
 choco install -y notepadplusplus --x86
