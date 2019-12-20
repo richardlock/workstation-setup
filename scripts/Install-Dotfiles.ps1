@@ -3,7 +3,7 @@ $dotfilesDir = "$env:USERPROFILE\.dotfiles"
 $dotfilesRepoBranch = 'windows'
 $dotfilesRepoUri = 'https://github.com/richardlock/dotfiles.git'
 
-# Docker
+# Wsltty
 $wslttyAppdataDir = "$env:APPDATA\wsltty"
 
 # Clone dotfiles Windows branch
