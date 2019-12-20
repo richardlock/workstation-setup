@@ -11,4 +11,4 @@ git clone -b $dotfilesRepoBranch --single-branch $dotfilesRepoUri $dotfilesDir
 
 # Wsltty symbolic link
 New-Item -ItemType Directory -Path $wslttyAppdataDir
-New-Item -ItemType SymbolicLink -Path "$wslttyAppdataDir\conf" -Value "$dotfilesDir\wsltty\conf"
+New-Item -ItemType SymbolicLink -Path "$wslttyAppdataDir\config" -Value "$dotfilesDir\wsltty\config"
