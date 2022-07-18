@@ -7,20 +7,20 @@ Invoke-RestMethod get.scoop.sh | Invoke-Expression
     7zip,
     filezilla,
     firefox,
-    git
-    googlechrome
-    hashcheck
-    mremoteng
-    notepadplusplus
-    paint.net
-    putty
-    rufus
-    sysinternals
-    vlc
-    vscode
-    windows-terminal
-    winget
-    winmerge
-    winscp
+    git,
+    googlechrome,
+    hashcheck,
+    mremoteng,
+    notepadplusplus,
+    paint.net,
+    putty,
+    rufus,
+    sysinternals,
+    vlc,
+    vscode,
+    windows-terminal,
+    winget,
+    winmerge,
+    winscp,
     wireshark
 ) | ForEach-Object { scoop install $_ }
