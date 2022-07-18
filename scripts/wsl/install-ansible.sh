@@ -18,11 +18,10 @@ virtualenv -p python3 ~/virtualenv/ansible-virtualenv
 source ~/virtualenv/ansible-virtualenv/bin/activate
 
 # Install Ansible
-sudo -H pip3 install ansible
-# sudo -H pip install git+https://github.com/ansible/ansible.git@devel
+pip install ansible
 
 # Install Ansible related packages
-sudo -H pip3 install \
+pip install \
   'ansible[azure]' \
   docker-py \
   f5-sdk \
