@@ -2,6 +2,10 @@
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod get.scoop.sh | Invoke-Expression
 
+# Pre-requisite for extras bucket
+scoop install git
+
+# Scoop extras bucket
 scoop bucket add extras
 
 # Install Scoop packages
@@ -9,7 +13,6 @@ scoop bucket add extras
     '7zip',
     'filezilla',
     'firefox',
-    'git',
     'googlechrome',
     'hashcheck',
     'mremoteng',
