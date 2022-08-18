@@ -2,6 +2,8 @@
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod get.scoop.sh | Invoke-Expression
 
+scoop bucket add extras
+
 # Install Scoop packages
 @(
     '7zip',
