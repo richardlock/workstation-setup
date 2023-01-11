@@ -5,9 +5,6 @@ $webClient = New-Object System.Net.WebClient
 # Enable Windows capabilities
 Invoke-Expression ($webClient.DownloadString('https://raw.githubusercontent.com/richardlock/workstation-setup/master/scripts/Enable-WindowsCapabilities.ps1'))
 
-# Install Scoop packages
-Invoke-Expression ($webClient.DownloadString('https://raw.githubusercontent.com/richardlock/workstation-setup/master/scripts/Install-ScoopPackages.ps1'))
-
 # Install miscellaneous
 Invoke-Expression ($webClient.DownloadString('https://raw.githubusercontent.com/richardlock/workstation-setup/master/scripts/Install-Miscellaneous.ps1'))
 
